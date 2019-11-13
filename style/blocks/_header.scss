@@ -1,0 +1,44 @@
+.header{
+  background-image: url("/src/img/fon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 181px;
+&__wrapper{
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+  &__button{
+    background-color:transparent;
+    border: 1px solid #3F6FB7;
+    padding: 22px 44px;
+    color: #3F6FB7;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 166px;
+   &-text{
+     margin-top: 25px;
+     font-size: 18px;
+     font-weight: 300;
+     line-height: 30px;
+     color: #414141;
+     width: 442px;
+   }
+    &-button{
+      margin-top: 32px;
+    }
+  }
+}
+.title{
+  font-size: 41px;
+  font-weight: 800;
+  line-height: 52px;
+  color: #414141;
+  margin-top: 25px;
+}

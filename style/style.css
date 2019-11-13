@@ -1,0 +1,223 @@
+/* line 1, common/_common.scss */
+body {
+  font-family: 'Montserrat',sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 9, common/_common.scss */
+ol, ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 14, common/_common.scss */
+blockquote, figure, h1, h2, h3, h4, h5, h6, ol, p, ul {
+  margin: 0;
+}
+
+/* line 17, common/_common.scss */
+*::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* line 19, common/_common.scss */
+*::after *, ::before * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 1, common/_mixins.scss */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+@media (max-width: 320px) {
+  /* line 8, common/_mixins.scss */
+  .container {
+    width: 320px;
+  }
+}
+/* line 1, blocks/_menu-select.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 4, blocks/_menu-select.scss */
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 12, blocks/_menu-select.scss */
+.header__item {
+  color: #414141;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  margin: 0 25px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+/* line 23, blocks/_menu-select.scss */
+.header__item:nth-child(1) {
+  padding-right: 15px;
+}
+
+/* line 29, blocks/_menu-select.scss */
+.header__item:nth-child(1):before {
+  position: absolute;
+  content: '';
+  background: url("/src/img/arrow.png") no-repeat;
+  background-size: 100%;
+  width: 12px;
+  height: 8px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-87%);
+          transform: translateY(-87%);
+}
+
+/* line 40, blocks/_menu-select.scss */
+.header__dropdown-item {
+  padding: 1rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+/* line 46, blocks/_menu-select.scss */
+.header__link {
+  color: #414141;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 50, blocks/_menu-select.scss */
+.header__link:hover {
+  color: #3F6FB7;
+}
+
+/* line 54, blocks/_menu-select.scss */
+.header__dropdown-link {
+  color: #fff;
+}
+
+/* line 58, blocks/_menu-select.scss */
+.header__dropdown-item:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+/* line 63, blocks/_menu-select.scss */
+.header__list li ul {
+  background: #00A3FF;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  left: 0;
+  display: none;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* line 76, blocks/_menu-select.scss */
+.header__list li:hover > ul,
+.header__list li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+/* line 1, blocks/_header.scss */
+.header {
+  background-image: url("/src/img/fon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 181px;
+}
+/* line 8, blocks/_header.scss */
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 15, blocks/_header.scss */
+.header__button {
+  background-color: transparent;
+  border: 1px solid #3F6FB7;
+  padding: 22px 44px;
+  color: #3F6FB7;
+}
+/* line 21, blocks/_header.scss */
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 166px;
+}
+/* line 25, blocks/_header.scss */
+.header__content-text {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #414141;
+  width: 442px;
+}
+/* line 33, blocks/_header.scss */
+.header__content-button {
+  margin-top: 32px;
+}
+
+/* line 38, blocks/_header.scss */
+.title {
+  font-size: 41px;
+  font-weight: 800;
+  line-height: 52px;
+  color: #414141;
+  margin-top: 25px;
+}
+
+/* line 1, blocks/_button.scss */
+button {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #3F6FB7;
+  padding: 22px 58px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
