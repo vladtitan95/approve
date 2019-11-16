@@ -40,7 +40,7 @@ blockquote, figure, h1, h2, h3, h4, h5, h6, ol, p, ul {
 @media (max-width: 320px) {
   /* line 8, common/_mixins.scss */
   .container {
-    width: 320px;
+    width: 280px;
   }
 }
 /* line 1, blocks/_menu-select.scss */
@@ -145,6 +145,12 @@ a {
   display: block;
 }
 
+@media (max-width: 768px) {
+  /* line 84, blocks/_menu-select.scss */
+  .header__item {
+    margin: 0 10px;
+  }
+}
 /* line 1, blocks/_header.scss */
 .header {
   background-image: url("/src/img/fon.png");
@@ -153,8 +159,9 @@ a {
   width: 100%;
   padding-top: 26px;
   padding-bottom: 181px;
+  overflow: hidden;
 }
-/* line 8, blocks/_header.scss */
+/* line 9, blocks/_header.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,14 +175,15 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 15, blocks/_header.scss */
+/* line 16, blocks/_header.scss */
 .header__button {
   background-color: transparent;
   border: 1px solid #3F6FB7;
   padding: 22px 44px;
   color: #3F6FB7;
+  margin-left: auto;
 }
-/* line 21, blocks/_header.scss */
+/* line 23, blocks/_header.scss */
 .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,7 +193,7 @@ a {
           justify-content: space-between;
   margin-top: 166px;
 }
-/* line 25, blocks/_header.scss */
+/* line 27, blocks/_header.scss */
 .header__content-text {
   margin-top: 25px;
   font-size: 18px;
@@ -194,12 +202,12 @@ a {
   color: #414141;
   width: 442px;
 }
-/* line 33, blocks/_header.scss */
+/* line 35, blocks/_header.scss */
 .header__content-button {
   margin-top: 32px;
 }
 
-/* line 38, blocks/_header.scss */
+/* line 40, blocks/_header.scss */
 .title {
   font-size: 41px;
   font-weight: 800;
@@ -208,6 +216,71 @@ a {
   margin-top: 25px;
 }
 
+@media (max-width: 644px) {
+  /* line 51, blocks/_header.scss */
+  .header__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 54, blocks/_header.scss */
+  .header__list {
+    margin-top: 15px;
+  }
+  /* line 57, blocks/_header.scss */
+  .header__button {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  /* line 61, blocks/_header.scss */
+  .header__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  /* line 65, blocks/_header.scss */
+  .header__content-img {
+    display: none;
+  }
+  /* line 68, blocks/_header.scss */
+  .header__content-text {
+    width: 100%;
+  }
+
+  /* line 73, blocks/_header.scss */
+  .title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 80, blocks/_header.scss */
+  .header__item {
+    margin: 0;
+  }
+  /* line 83, blocks/_header.scss */
+  .header__link {
+    font-size: 14px;
+  }
+  /* line 86, blocks/_header.scss */
+  .header__content {
+    margin-top: 20px;
+  }
+
+  /* line 90, blocks/_header.scss */
+  .header__item:nth-child(2) {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 320px) {
+  /* line 95, blocks/_header.scss */
+  .header {
+    width: 360px;
+    overflow: unset;
+  }
+}
 /* line 1, blocks/_button.scss */
 button {
   font-size: 16px;

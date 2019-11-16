@@ -80,4 +80,8 @@ a {
   display: block;
 
 }
-
+@media (max-width: 768px) {
+  .header__item{
+    margin: 0 10px;
+  }
+}
